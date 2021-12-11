@@ -11,3 +11,32 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  font-family: 'Cinzel', serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+p,h3 {
+  font-family: 'Forum', cursive;
+}
+p {
+  color: rgb(114, 114, 114);
+  font-size: 0.9rem;
+}
+
+h3 {
+  color: white;
+}
+
+h6 {
+  color: rgb(100, 100, 100);
+  font-size: 0.7rem;
+  margin-top: 45px;
+}

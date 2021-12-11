@@ -1,0 +1,22 @@
+.anchor {
+  font-size: 50px;
+  padding: 0;
+  color: rgb(112, 112, 112);
+  margin-left:25px;
+  transition: 0.7s ease-in-out;
+}
+.anchor:hover {
+  color: white;
+  transition: 0.6s ease-in-out;
+}
+.btns-net {
+  display: flex;
+  gap: 30px;
+}
+.socials {
+  color: rgb(167, 167, 167);
+}
+.socials:hover {
+  color: white;
+  transition: 0.6s ease-in-out;
+}

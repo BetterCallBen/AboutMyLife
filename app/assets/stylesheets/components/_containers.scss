@@ -1,4 +1,63 @@
-.big-container {
+.contain {
   width: 100vw;
-  position: absolute;
+  height: 100vh;
+}
+
+.band {
+  width: 100vw;
+  background-color: black;
+  height: 74vh;
+}
+
+.first-name {
+  height: 13vh;
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+.last-name {
+  height: 19vh;
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  transform: translateY(-70px);
+}
+
+.letter-div {
+  overflow-x: hidden;
+}
+.letter-first {
+  font-size: 10em;
+}
+.letter-last {
+  font-size: 10em;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.anchor-btns {
+  height: 100%;
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.infos {
+  width: 47%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

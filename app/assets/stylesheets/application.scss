@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 a:hover {
   text-decoration: none;
 }
+
 p,h3 {
   font-family: 'Forum', cursive;
 }
@@ -31,6 +32,9 @@ p {
   font-size: 0.9rem;
 }
 
+h1 {
+  font-weight: 600;
+}
 h3 {
   color: white;
 }

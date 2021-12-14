@@ -2,6 +2,7 @@ export { appearOnscroll };
 
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
+const anchors = document.querySelectorAll('.anchor');
 
 const appearOptions = {
   threshold: 0,
@@ -14,12 +15,7 @@ const appearOnscroll = new IntersectionObserver
   appearOnscroll
 ) {
   entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add('appear');
-      appearOnscroll.unobserve(entry.target);
-    }
+    entry.target.classList.add('appear');
   })
 },
 appearOptions);
@@ -30,4 +26,15 @@ faders.forEach(fader => {
 
 sliders.forEach(slider => {
   appearOnscroll.observe(slider)
+})
+
+anchors.forEach(anchor => {
+  anchor.addEventListener("click", function () {
+    sliders.forEach(slider => {
+      slider.classList.remove('appear')
+    })
+    faders.forEach(fader => {
+      fader.classList.remove('appear')
+    })
+  });
 })

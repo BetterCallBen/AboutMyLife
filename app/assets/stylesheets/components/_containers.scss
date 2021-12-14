@@ -1,22 +1,26 @@
-.contain {
+.contain-home {
   width: 100vw;
   height: 100vh;
+  background: #131313;
+  position: sticky;
+  top: 0;
 }
 
 .band {
-  width: 100vw;
+  width: 100%;
   background-color: black;
-  height: 74vh;
+  height: 74%;
+  position: relative;
 }
 
 .first-name {
-  height: 13vh;
+  height: 13%;
   display: flex;
   justify-content: space-evenly;
   color: black;
 }
 .last-name {
-  height: 19vh;
+  height: 19%;
   display: flex;
   justify-content: space-evenly;
   color: black;

@@ -8,12 +8,41 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-// External imports
 import "bootstrap";
 
-// Internal imports
-import { appearOnscroll } from '../components/observers';
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
+const openHome = document.querySelector('.open-home');
+const closeHome = document.querySelector('.close-home');
+const anchorPhoto = document.querySelector('.anchor-photo');
 
-document.addEventListener('turbolinks:load', () => {
-  appearOnscroll();
-});
+
+openHome.addEventListener("click", function () {
+  sliders.forEach(slider => {
+    slider.classList.add('appear')
+  })
+  faders.forEach(fader => {
+    fader.classList.add('appear')
+  })
+  openHome.classList.add('hidden')
+})
+
+closeHome.addEventListener("click", function () {
+  sliders.forEach(slider => {
+    slider.classList.remove('appear')
+  })
+  faders.forEach(fader => {
+    fader.classList.remove('appear')
+  })
+  openHome.classList.remove('hidden')
+})
+
+anchorPhoto.addEventListener("click", function () {
+  sliders.forEach(slider => {
+    slider.classList.remove('appear')
+  })
+  faders.forEach(fader => {
+    fader.classList.remove('appear')
+  })
+  openHome.classList.remove('hidden')
+})

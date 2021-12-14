@@ -1,3 +1,26 @@
+.open-home {
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  &:hover {
+    color: white;
+  }
+}
+.open-home.hidden {
+  display: none;
+;}
+
+.close-home {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  &:hover {
+    color: white;
+  }
+}
+
 .anchor {
   font-size: 50px;
   padding: 0;

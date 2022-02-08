@@ -16,25 +16,30 @@
 .first-name {
   height: 13%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: black;
 }
 .last-name {
   height: 19%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: black;
   transform: translateY(-70px);
 }
 
 .letter-div {
   overflow-x: hidden;
+  height: max-content;
 }
 .letter-first {
   font-size: 10em;
+  font-weight: 700;
+  position: relative;
+  top: -40px;
 }
 .letter-last {
   font-size: 10em;
+  font-weight: 700;
 }
 
 .container {

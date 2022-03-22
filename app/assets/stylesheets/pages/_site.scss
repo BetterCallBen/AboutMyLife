@@ -1,0 +1,61 @@
+.site {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+
+  .site-title {
+    width: 50%;
+    font-size: 1rem;
+    margin: 0;
+    letter-spacing: 0.2em;
+    &::selection {
+      color: white;
+      background: 0 0;
+    }
+  }
+  .site-infos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    .url-div {
+      display: flex;
+
+      .url {
+        width: 30%;
+        font-family: 'Forum', cursive;
+        &::selection {
+          color: white;
+          background: 0 0;
+        }
+      }
+      .url-link {
+        font-family: 'Forum', cursive;
+        &::selection {
+          color: white;
+          background: 0 0;
+        }
+      }
+    }
+    .team-div {
+      display: flex;
+
+
+      .team {
+        width: 30%;
+        font-family: 'Forum', cursive;
+        &::selection {
+          color: white;
+          background: 0 0;
+        }
+      }
+      .team-list {
+        font-family: 'Forum', cursive;
+        &::selection {
+          color: white;
+          background: 0 0;
+        }
+      }
+    }
+  }
+}

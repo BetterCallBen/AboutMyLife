@@ -1,0 +1,22 @@
+.containers {
+  &.hidden {
+    display: none;
+
+  }
+}
+
+.container-sites {
+  padding-top: 100px;
+  background-color: rgb(245, 245, 245);
+  &::selection {
+    color: white;
+    background-color: 0 0;
+  }
+  .btn-open-sites {
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+
+}

@@ -1,6 +1,66 @@
-<div class="container-home containers">
+<div class="container-sites containers">
+  <div class="site">
+    <h6 class="site-title">michelin immobilier estimation</h6>
+    <div class="site-infos">
+      <div class="url-div">
+        <h5 class="url">url</h5>
+        <h5 class="url-link">private (site admin)</h5>
+      </div>
+      <div class="team-div">
+        <h5 class="team">team</h5>
+        <h5 class="team-list">Alone</h5>
+      </div>
+    </div>
+  </div>
 
+  <div class="site">
+    <h6 class="site-title">alanej</h6>
+    <div class="site-infos">
+      <div class="url-div">
+        <h5 class="url">url</h5>
+        <h5 class="url-link">alanej.herokuapp.com</h5>
+      </div>
+      <div class="team-div">
+        <h5 class="team">team</h5>
+        <h5 class="team-list">Robin Mael Eric</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="site">
+    <h6 class="site-title">taxi masson</h6>
+    <div class="site-infos">
+      <div class="url-div">
+        <h5 class="url">url</h5>
+        <h5 class="url-link">taxi-florent-masson.com</h5>
+      </div>
+      <div class="team-div">
+        <h5 class="team">team</h5>
+        <h5 class="team-list">Alone</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="site">
+    <h6 class="site-title">Betcoin</h6>
+    <div class="site-infos">
+      <div class="url-div">
+        <h5 class="url">url</h5>
+        <h5 class="url-link">in progress</h5>
+      </div>
+      <div class="team-div">
+        <h5 class="team">team</h5>
+        <h5 class="team-list">Alone</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="open-menu-div">
+    <a class="btn-open btn-open-sites open-menu1">menu</a>
+    <a class="btn-open btn-open-sites open-menu2">menu</a>
+  </div>
 </div>
+
 
 <div class="contain-home bg-grey fade-in">
   <div class="first-name">
@@ -37,11 +97,12 @@
       <div class="anchor-btns">
 
         <div class="slide-in from-below1">
-          <a class="anchor active">Home</a>
+          <%= link_to "Home", root_path, class: "anchor-home anchor" %>
+
         </div>
 
         <div class="slide-in from-below2">
-          <a class="anchor anchor-photo" href="/sites">Sites</a>
+          <a class="anchor anchor-photo active" href="/sites">Sites</a>
         </div>
 
         <div class="slide-in from-below3">
@@ -104,9 +165,5 @@
 
 </div>
 
-<div class="open-menu-div">
-  <a class="btn-open btn-open-home open-menu1">menu</a>
-  <a class="btn-open btn-open-home open-menu2">menu</a>
-</div>
 
-<a class="close-home btn-close-home">close</a>
+<a class="close-home btn-close-sites">close</a>
